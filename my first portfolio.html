@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+</head>
+<link rel="stylesheet" href="portfolio.styles.css">
+<body>
+   <!--Header with Navigation--> 
+   <header>
+   <h1>My Portfolio</h1>
+   <nav>
+    <ul>
+        <li> <a href="#about">About Me </a></li>
+        <li> <a href="#projects">Pr0jects</a></li>
+        <li> <a href="#skills">Skills</a></li>
+        <li> <a href="#contact">Contact</a></li>
+    </ul> 
+   </nav>
+   </header>
+   <!-- Main Content-->
+    <main>
+        <!--About Section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi,I'm <strong>Jasper Moore</strong>,a passionate web developer learning HTML,CSS and Javascript.
+                I enjoy creating user-friendly and accessible websites.
+            </p>
+            <figure>
+                <img src="IMG-20250227-WA0005.jpg"
+                alt="Profile picture of Jasper Moore">
+                <figcaption>My Profile Picture</figcaption>
+            </figure>
+        </section>
+        <!--Projects Section-->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article>
+                <h3>Project 1: Personal Blog</h3>
+                <p>A blog built with HTML and CSS to share my learning journey.</p>
+                <a href="https://example.com" target="_blank" rel="noopener"> 
+                    View Project </a>
+            </article>
+            <article>
+                <h3>Project 2:Photo Gallery</h3> 
+                <p>A responsive photo gallery showcasing my photography.</p>
+                <a href="https://example.com"target="_blank" rel="noopener">
+                     View Project </a>
+            </article>
+        </section>
+
+        <!--Skills Section (Table)-->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Beginner</td>
+                </tr>
+                </tbody>
+                </table>
+        </section>
+
+        <!--Contact Form-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id=" name" 
+                    name="name" placeholder="Jasper Moore">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" email="email" 
+                    placeholder="jesuyonhunsu@gmail.com">
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" 
+                    row="4" placeholder="Your message here..."></textarea>
+                </div>
+
+                <div>
+                    <label for="reason">Reason for contact</label>
+                    <select="reason" name="reason">
+                        <option value="job">Job Opportunity</option>
+                        <option value="collartion">Collartion</option>
+
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <button type="submit">Send Message </button>
+            </form>
+        </section>
+    </main>
+    <!--Aside (Optional Related Content)-->
+    <aside>
+        <h3>Follow me</h3>
+        <ul>
+            <li><a href="https//x.com" target="_blank" 
+                rel="noopener">X Profile</a></li>
+                <li><a href="https//github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+    </aside>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy;2025 Jasper Moore. All rights reserved.</p>
+        <p>Contact: <a href="mailto:jesuyonhunsu@gmail.com"></a>
+            jesuyonhunsu@gmail.com</p>
+    </footer>
+
+    <!--Multimedia Example-->
+    <section>
+        <h2>Multimedia Demo</h2>
+        <audio controls>
+            <source src="https//www.w3schools/html/horse.mp3" type="audio//mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="300">
+            <source src="https//www.w3schools/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>  
+</body>
+</html>
